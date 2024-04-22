@@ -12,7 +12,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import api from './api/login';
 
-import Login from './pages/';
+import Login from './pages/login';
 import Register from './pages/register';
 import Main from './pages/main';
 
@@ -28,7 +28,7 @@ function NavigationStack() {
       if (value !== null) {
         const res = await api.confirm(value);
         if (res.code === 200) {
-          Alert('验证成功，欢迎回来！');
+          alart('验证成功，欢迎回来！');
           navigation.navigate('main');
         }
       }

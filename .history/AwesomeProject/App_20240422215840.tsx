@@ -4,9 +4,8 @@
  *
  * @format
  */
-
+// @ts-nocheck
 import React, {useEffect} from 'react';
-import {Alert} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';

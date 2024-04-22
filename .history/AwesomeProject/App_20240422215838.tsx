@@ -6,7 +6,6 @@
  */
 // @ts-nocheck
 import React, {useEffect} from 'react';
-import {Alert} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
@@ -28,7 +27,7 @@ function NavigationStack() {
       if (value !== null) {
         const res = await api.confirm(value);
         if (res.code === 200) {
-          alert('验证成功，欢迎回来！');
+          alart('验证成功，欢迎回来！');
           navigation.navigate('main');
         }
       }
